@@ -1,0 +1,5 @@
+# Allow system_server to find hal_cameraHIDL_hwservice
+allow system_server hal_cameraHIDL_hwservice:hwservice_manager find;
+
+# Allow binder communication with hal_cameraHIDL_default
+binder_call(system_server, hal_cameraHIDL_default)
