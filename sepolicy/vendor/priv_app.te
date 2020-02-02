@@ -1,2 +1,5 @@
+# Allow priv_app to read hal_cameraHIDL_hwservice
+allow priv_app hal_cameraHIDL_hwservice:hwservice_manager find;
+
 # Allow priv_app to read sysfs_battery_supply
 allow priv_app sysfs_battery_supply:file r_file_perms;

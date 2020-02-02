@@ -3,3 +3,9 @@ allow system_server hal_cameraHIDL_hwservice:hwservice_manager find;
 
 # Allow binder communication with hal_cameraHIDL_default
 binder_call(system_server, hal_cameraHIDL_default)
+
+# Allow system_server to get persist_camera_prop
+get_prop(system_server, persist_camera_prop)
+
+# Allow system_server to get vendor_camera_prop
+get_prop(system_server, vendor_camera_prop)
