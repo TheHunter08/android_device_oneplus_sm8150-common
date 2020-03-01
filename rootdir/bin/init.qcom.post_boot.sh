@@ -4217,6 +4217,9 @@ esac
 
 case "$target" in
     "msmnile")
+    # Enable SIGKILL memory reap
+    echo 1 > /proc/sys/vm/reap_mem_on_sigkill
+
 	# Core control parameters for gold
 	echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
 	echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
