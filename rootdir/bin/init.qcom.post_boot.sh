@@ -4217,6 +4217,12 @@ esac
 
 case "$target" in
     "msmnile")
+    # Setup 4GB of vnswap
+    echo 4294967296 > /sys/devices/virtual/block/vnswap0/disksize
+    echo 130 > /proc/sys/vm/swappiness
+    mkswap /dev/block/vnswap0
+    swapon /dev/block/vnswap0
+
     # Enable SIGKILL memory reap
     echo 1 > /proc/sys/vm/reap_mem_on_sigkill
 
