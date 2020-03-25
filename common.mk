@@ -470,10 +470,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     tri-state-key_daemon
 
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.2-service.oneplus_msmnile
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
