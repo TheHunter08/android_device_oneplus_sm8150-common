@@ -104,7 +104,6 @@
         <service
             android:name="com.havoc.device.DeviceSettings.RefreshRateTileService"
             android:icon="@drawable/ic_refresh_tile_60"
-            android:label="@string/tile_refresh_rate"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
