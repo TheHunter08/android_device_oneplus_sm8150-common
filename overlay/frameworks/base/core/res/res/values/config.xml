@@ -821,5 +821,9 @@
     <string name="config_defaultDialer" translatable="false">com.android.dialer</string>
 							
     <!-- Whether device ignores the RSSNR signal implementation -->
-    <bool name="config_ignoreRssnrSignalLevel">true</bool>													  
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>	
+
+    <!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
+	
 </resources>
