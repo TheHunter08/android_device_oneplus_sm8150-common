@@ -192,7 +192,7 @@ TARGET_RIL_VARIANT := caf
 TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-09-05
+VENDOR_SECURITY_PATCH := 2020-03-01
 
 # We modify several neverallows, so let the build proceed
 #ifneq ($(TARGET_BUILD_VARIANT),userdebug)
